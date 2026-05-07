@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(25, 95, 164);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor {
+    background-color: white;
+    color: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 500px; 
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: #f39c12; 
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease; 
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #e67e22; /* Un naranja un poco más oscuro */
+    transform: scale(1.05);    /* El botón crece un poquito (efecto visual muy pro) */
+}
+main {
+    flex: 1;
+}
+
+.pieDePagina {
+    width: 100%;
+    padding: 20px;
+    background-color: #061320;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
+    .contenedor {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 3.0rem; 
+    }
+    .contenedor {
+        margin-top: 80px; 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contenedor {
+        max-width: 800px;
+    }
+}
