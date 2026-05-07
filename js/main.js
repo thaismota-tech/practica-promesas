@@ -18,7 +18,6 @@ botonConsulta.addEventListener('click', () => {
       mostrarDatosUsuario.innerHTML = "Hubo un error al obtener los datos.";
     });
 });
-
 //FUNCIONES
 const consultarApi = () => {
   return new Promise((resolve, reject) => {
@@ -28,7 +27,7 @@ const consultarApi = () => {
         email: "mari.silva@email.com"
       };
       resolve(usuarioRecibido);
-      //Retraso del simulado: 2 segundos, son lo mismo que 2000ms:
+      //Retraso del simulado: 2 segundos, son lo mismo que 2000ms para JS:
     }, 2000);
   });
 };
